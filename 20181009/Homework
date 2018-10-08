@@ -21,7 +21,7 @@ int main()
 {
     int n = 10;
     int flag = /* TODO */;
-    printf("%d\n",flag);
+    printf("%d\n", flag);
     return 0;
 }
 
