@@ -26,23 +26,23 @@ N=4的情况：
 
 PTA（https://pintia.cn/）与PAT（https://www.patest.cn/）是浙江大学做的一个相当不错的在线编程平台。注册一个PTA账号。
 
-7. 完成PTA平台中的https://pintia.cn/problem-sets/14/problems/783一题，将你的程序在线提交， 直到正确为止（注：程序命名为7.c）。
+7. 完成PTA平台中的https://pintia.cn/problem-sets/14/problems/783一题，将你的程序在线提交，直到正确为止（注：程序命名为7.c）。
 
-8. 完成PTA平台中的https://pintia.cn/problem-sets/14/problems/784一题，将你的程序在线提交， 直到正确为止（注：程序命名为8.c）。
+8. 完成PTA平台中的https://pintia.cn/problem-sets/14/problems/784一题，将你的程序在线提交，直到正确为止（注：程序命名为8.c）。
 
-9. 完成PTA平台中的https://pintia.cn/problem-sets/14/problems/786一题，将你的程序在线提交， 直到正确为止（注：程序命名为9.c）。
+9. 完成PTA平台中的https://pintia.cn/problem-sets/14/problems/786一题，将你的程序在线提交，直到正确为止（注：程序命名为9.c）。
 
-10. 完成PTA平台中的https://pintia.cn/problem-sets/14/problems/798一题，将你的程序在线提交， 直到正确为止（注：程序命名为10.c）。
+10. 完成PTA平台中的https://pintia.cn/problem-sets/14/problems/798一题，将你的程序在线提交，直到正确为止（注：程序命名为10.c）。
 
-11. 完成PTA 平台中的https://pintia.cn/problem-sets/14/problems/796一题，将你的程序在线提交， 直到正确为止（注：程序命名为11.c）。
+11. 完成PTA 平台中的https://pintia.cn/problem-sets/14/problems/796一题，将你的程序在线提交，直到正确为止（注：程序命名为11.c）。
 
-12. 完成PTA 平台中的https://pintia.cn/problem-sets/14/problems/804一题，将你的程序在线提交， 直到正确为止（注：程序命名为12.c）。
+12. 完成PTA 平台中的https://pintia.cn/problem-sets/14/problems/804一题，将你的程序在线提交，直到正确为止（注：程序命名为12.c）。
 
-13. 阅读百度百科关于 scanf 的描述：https://baike.baidu.com/item/scanf/10773316?fr=aladdin（注：无须写程序）。
+13. 阅读百度百科关于scanf的描述：https://baike.baidu.com/item/scanf/10773316?fr=aladdin（注：无须写程序）。
 
-14. 阅读百度百科关于printf 的描述：https://baike.baidu.com/item/printf（注：无须写程序）。
+14. 阅读百度百科关于printf的描述：https://baike.baidu.com/item/printf（注：无须写程序）。
 
-15. 编写一个完整的程序，读入一个十进制的整型变量，分别输出其二进制、八进制、 十六进制形式。
+15. 编写一个完整的程序，读入一个十进制的整型变量，分别输出其二进制、八进制、十六进制形式。
 
 注：
 1） 作业提交到自己仓库的19180xxx/20181016目录下，19180xxx为你的学号。
