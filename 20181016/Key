@@ -1,0 +1,266 @@
+1.
+
+#include <stdio.h>
+int main() {
+	int i;
+	int sum = 0;
+	for (i = 2; i <= 100; i += 2)
+		sum += i;
+	printf("%d\n", sum);
+	return 0;
+}
+
+
+2.
+
+#include <stdio.h>
+int main() {
+	int i;
+	int res = 0;
+	for (i = 1; i <= 97; i += 3)
+		res = i * (i + 1) * (i + 2);
+	printf("%d\n", res);
+	return 0;
+}
+
+
+3.
+
+#include <stdio.h>
+int main() {
+	int a, n;
+	int res = 0;
+	int temp = 0, i;
+	scanf("%d%d", &a, &n);
+	for (i = 1; i <= n; ++i) {
+		temp = temp * 10 + a;
+		res += temp;
+	}
+	printf("%d\n", res);
+	return 0;
+}
+
+
+4.
+
+#include <stdio.h>
+int main() {
+	int sum = 0;
+	int fac = 1;
+	int i;
+	for (i = 1; i <= 10; ++i) {
+		fac *= i;
+		sum += fac;
+	}
+	printf("%d\n", sum);
+	return 0;
+}
+
+
+5.
+
+#include <stdio.h>
+int main() {
+	int i, j;
+	for (i = 1; i <= 9; ++i) {
+		for (j = 1; j <= i; ++j)
+			printf("%d * %d = %-5d", i, j, i * j);
+		printf("\n");
+	}
+	return 0;
+}
+
+
+6.
+
+#include <stdio.h>
+int main() {
+	int N;
+	int i, j, temp;
+	int arr[23];
+	scanf("%d", &N);
+	for (i = 0; i < N; ++i)
+		arr[i] = i + 1;
+	for (i = N; i < 2 * N - 1; ++i)
+		arr[i] = arr[2 * N - i - 2];
+	for (i = 0; i < 2 * N - 1; ++i) {
+		for (j = 1; j <= N - arr[i]; ++j)
+			printf(" ");
+		temp = 2 * arr[i] - 1;
+		for (j = 1; j <= temp; ++j)
+			printf("*");
+		printf("\n");
+	}
+	return 0;
+}
+
+注：
+在第三个for循环中，变量i表示当前所输出的行数，从0开始，共2N?1行。对于每一行，首先输出若干个空格，再输出若干个*，最后输出换行符。
+
+
+7.
+
+#include <stdio.h>
+int main() {
+	char str[4];
+	scanf("%s", str);
+	if (str[2] != '0')
+		printf("%c%c%c", str[2], str[1], str[0]);
+	else if (str[1] != '0')
+		printf("%c%c", str[1], str[0]);
+	else
+		printf("%c", str[0]);
+	return 0;
+}
+
+
+8.
+
+#include <stdio.h>
+int main() {
+	int n;
+	int arr[8] = {0};
+	int i = 0;
+	scanf("%d", &n);
+	while (n) {
+		arr[i] = n % 2;
+		n /= 2;
+		++i;
+	}
+	printf("%d", 10 * (arr[7] * 8 + arr[6] * 4 + arr[5] * 2 + arr[4])
+	       + (arr[3] * 8 + arr[2] * 4 + arr[1] * 2 + arr[0]));
+	return 0;
+}
+
+
+9.
+
+#include <stdio.h>
+int main() {
+	double d1, d2;
+	int i;
+	char c;
+	scanf("%lf%d %c %lf", &d1, &i, &c, &d2);
+	printf("%c %d %.2lf %.2lf", c, i, d1, d2);
+	return 0;
+}
+
+
+10.
+
+#include <stdio.h>
+#include <math.h>
+#define EPS 1e-5
+#define TRIPLE(x) ((x) * (x) * (x))
+#define DOUBLE(x) ((x) * (x))
+#define FUNC(a3, a2, a1, a0, x) ((a3) * TRIPLE(x) + \
+                                 (a2) * DOUBLE(x) + (a1) * (x) + (a0))
+int main() {
+	double a3, a2, a1, a0;
+	double a, b;
+	double halfaplusb, temp;
+	scanf("%lf%lf%lf%lf%lf%lf", &a3, &a2, &a1, &a0, &a, &b);
+	while (b - a > 0.001) {
+		halfaplusb = (a + b) / 2;
+		temp = FUNC(a3, a2, a1, a0, halfaplusb);
+		if (fabs(temp) < EPS)
+			break;
+		if (temp * FUNC(a3, a2, a1, a0, a) > 0)
+			a = halfaplusb;
+		else
+			b = halfaplusb;
+	}
+	printf("%.2lf\n", halfaplusb);
+	return 0;
+}
+
+注：
+（1）宏可以简化重复代码。可参考教材和这篇博客：http://blog.csdn.net/pirlck/article/details/51254590。
+（2）浮点数的大小与不相等判断直接使用>、<、!=，但浮点数的相等判断不能直接用==，因为浮点数在计算机中保存会存在精度缺失的问题。可以使用如下方法：
+
+#include <stdio.h>
+#include <math.h>
+#define EPA 1e-10// EPS为阈值
+int main() {
+	double d1, d2;
+	/*
+	* some assignment operations
+	*/
+	printf("%d\n", d1 == d2);// incorrect way
+	printf("%d\n", fabs(d1 - d2) < EPS);// corrent way
+	return 0;
+}
+
+本题判断f((a+b)/2)是否为零时，应该用 if(fabs(temp) < EPS) 而非 if(temp == 0)
+
+
+11.
+
+#include <stdio.h>
+int main() {
+	int n;
+	scanf("%d", &n);
+	switch (n) {
+		case 1:
+			printf("123 124 132 134 142 143\n213 214 231 234 241 243\n"
+			       "312 314 321 324 341 342\n412 413 421 423 431 432");
+			break;
+		case 2:
+			printf("234 235 243 245 253 254\n324 325 342 345 352 354\n"
+			       "423 425 432 435 452 453\n523 524 532 534 542 543");
+			break;
+		case 3:
+			printf("345 346 354 356 364 365\n435 436 453 456 463 465\n"
+			       "534 536 543 546 563 564\n634 635 643 645 653 654");
+			break;
+		case 4:
+			printf("456 457 465 467 475 476\n546 547 564 567 574 576\n"
+			       "645 647 654 657 674 675\n745 746 754 756 764 765");
+			break;
+		case 5:
+			printf("567 568 576 578 586 587\n657 658 675 678 685 687\n"
+			       "756 758 765 768 785 786\n856 857 865 867 875 876");
+			break;
+		case 6:
+			printf("678 679 687 689 697 698\n768 769 786 789 796 798\n"
+			       "867 869 876 879 896 897\n967 968 976 978 986 987");
+			break;
+	}
+	return 0;
+}
+
+
+12.
+
+#include <stdio.h>
+int gcd(int a,int b) {
+	a=a%b;
+	if (!a) return b;
+	return gcd(b,a);
+}
+int main() {
+	int a,b,c;
+	scanf("%d/%d",&a,&b);
+	c=gcd(a,b);
+	printf("%d/%d",a/c,b/c);
+	return 0;
+}
+
+注：
+辗转相除法求最大公约数
+
+
+13.14.
+
+关于scanf与printf，我在此提几个问题供你们思考：
+（1）scanf与printf分别是标准输入输出函数，而函数都有返回值，那么scanf与printf的返回值分别是什么；
+（2）EOF的含义与使用方法；
+（3）stdin与stdout分别是什么；
+（4）在使用printf时，供输出的参数与格式控制符的个数不一致时，会发生什么，如：
+int a = 1, b = 2;
+printf("a = %d, b = %d", a);
+为什么。
+
+
+15.
+略
