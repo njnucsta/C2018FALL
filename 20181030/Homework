@@ -81,9 +81,11 @@ void reverse(char* str);
 void matrix_product(int mat1[][K], int mat2[][N], int produtct[][N]);
 
 该函数接受三个参数，分别是三个二维数组。其中，mat1表示M×K的矩阵，mat2表示K×N的矩阵，product表示M×N的矩阵。M、N、K是预先定义的宏。例如：
+
 #define M 4
 #define K 5
 #define N 6
+
 该函数计算mat1与mat2的乘积，并将该乘积保存在product中。在主函数中调用该函数，并进行多组测试，以验证你的函数（注：程序命名为12.c）。
 
 
@@ -92,15 +94,17 @@ void matrix_product(int mat1[][K], int mat2[][N], int produtct[][N]);
 void matrix_transpose (int mat[][N], int transposed[][M]);
 
 该函数接受两个参数，分别是两个个二维数组。其中，mat表示M×N的矩阵，transposed表示N×M的矩阵。M、N是预先定义的宏。例如：
+
 #define M 4
 #define N 5
+
 该函数将mat进行转置，并将转置的结果保存在transposed中。在主函数中调用该函数，并进行多组测试，以验证你的函数（注：程序命名为13.c）。
 
 
 14. 阅读教材 P258 至 P263，了解宏的使用（注：此题不用写程序）。
 
 
-15. 仔细阅读教材P130至P140，学会使用几个常用的字符串处理函数包括但不仅限于 gets, puts, strcat，strcpy, strcmp, strlen。这些函数往往不安全，你可以查阅网上的资料与博客，了解这些函数的缺陷，并在使用时避开踩坑（注：此题不用写程序）。
+15. 仔细阅读教材P130至P140，学会使用几个常用的字符串处理函数包括但不仅限于 gets, puts, strcat，strcpy, strcmp, strlen。这些函数往往不安全，你可以查阅网上的资料与博客，了解这些函数的缺陷，并在使用时避免踩坑（注：此题不用写程序）。
 
 
 16. 查阅网上的资料与博客，了解调用栈(call stack)（注：此题不用写程序）。
