@@ -96,3 +96,27 @@ int main() {
 		printf("A");
 	return 0;
 }
+
+
+8
+
+#include <stdio.h>
+const int N = 13;
+int arr[N] = {0};
+void PascalTriangle(int row) {
+	if (row == 1) {
+		arr[1] = 1;
+		printf("%6d\n", arr[1]);
+		return;
+	}
+	PascalTriangle(row - 1);
+	for (int i = row; i >= 1; --i)
+		arr[i] += arr[i - 1];
+	for (int i = 1; i <= row; ++i)
+		printf("%6d", arr[i]);
+	printf("\n");
+}
+int main() {
+	PascalTriangle(N);
+	return 0;
+}
