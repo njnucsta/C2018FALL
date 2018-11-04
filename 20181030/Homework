@@ -78,7 +78,7 @@ void reverse(char* str);
 
 12. 写一个函数，函数声明如下：
 
-void matrix_product(int mat1[][K], int mat2[][N], int produtct[][N]);
+void matrix_product(int mat1[][K], int mat2[][N], int product[][N]);
 
 该函数接受三个参数，分别是三个二维数组。其中，mat1表示M×K的矩阵，mat2表示K×N的矩阵，product表示M×N的矩阵。M、N、K是预先定义的宏。例如：
 
