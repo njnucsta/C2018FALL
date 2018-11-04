@@ -109,6 +109,7 @@ void matrix_transpose (int mat[][N], int transposed[][M]);
 
 16. 查阅网上的资料与博客，了解调用栈(call stack)（注：此题不用写程序）。
 
+
 注：
 1）作业提交到自己仓库的19180xxx/20181030目录下，19180xxx为你的学号。
 2）建议每做完一道题目后，使用git add*将其添加，但暂且不要用git commit将其提交。所有题目完成后，使用git commit提交，之后再git push。
