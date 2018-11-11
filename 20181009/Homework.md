@@ -15,7 +15,7 @@ https://en.wikipedia.org/wiki/Bitwise_operation（注：无须写程序）。
 https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000（注：无须写程序）。
 
 8. 在如下程序中，去掉注释，在TODO的位置写一个表达式，这个表达式的作用是判断一个整数的奇偶性。使得当n为奇数时，flag为1；当n为偶数时，flag为0。编译运行，并多次修改n的值，以测试你所写的表达式是否正确（注：程序文件命名为parity.c；提示：使用三目运算符或位运算）。
-
+```c
 #include <stdio.h>
 int main()
 {
@@ -24,14 +24,14 @@ int main()
     printf("%d\n", flag);
     return 0;
 }
-
+```
 9. 补充练习：完成The C Programming Language一书Exercise2-6,2-7,2-8。（注：程序文件分别命名为tcpl_2_6.c，tcpl_2_7.c，tcpl_2_8.c）。
 
 10. 在如下程序中，去掉注释，在TODO的位置写一些代码，做到能够交换a与b的数值。例如，若输入的a和b分别是3和5，那么两条printf语句的输出应当分别是：
 a = 3, b = 5
 a = 5, b = 3
 （注：程序文件命名为swap.c；提示：分别采用临时变量与位运算的方式来完成）。
-
+```c
 #include <stdio.h>
 int main()
 {
@@ -42,7 +42,7 @@ int main()
     printf("a = %d, b = %d\n", a, b);
     return 0;
 }
-
+```
 
 注：
 1） 作业提交到自己仓库的19180xxx/20181009目录下，19180xxx为你的学号。
