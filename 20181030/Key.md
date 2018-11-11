@@ -213,7 +213,7 @@ void matrix_product(int mat1[][K], int mat2[][N], int product[][N]) {
 				product[i][j] += mat1[i][k] * mat2[k][j];
 }
 ```
-我用到了memset函数，来将product矩阵清零。关于memset的讲解，可参见[百度百科](https://baike.baidu.com/item/memset/4747579?fr=aladdin）
+我用到了memset函数，来将product矩阵清零。关于memset的讲解，可参见[百度百科](https://baike.baidu.com/item/memset/4747579?fr=aladdin)
 
 
 13.
