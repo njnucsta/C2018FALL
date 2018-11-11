@@ -1,4 +1,8 @@
-1.2.
+1.
+略
+
+
+2.
 略
 
 
@@ -28,7 +32,7 @@ int main() {
 
 
 4.
-
+```c
 #include <stdio.h>
 const int MOD = 100007;
 int main() {
@@ -45,12 +49,12 @@ int main() {
 	printf("%d", fib[N]);
 	return 0;
 }
-
+```
 此题类似与第3题，但又是对第3题的扩展。同样，设走上第N级台阶的走法数为f(N)。我们知道，走上第N级台阶只有K种可能：从第N−1级台阶跨1级，从第N−2级台阶跨2级，…，从第N−K级台阶跨K级。那么很容易得出： f(N)=Σf(N−i)，1<=i<=K
 
 
 5.
-
+```c
 #include <stdio.h>
 int main() {
 	int n;
@@ -62,14 +66,14 @@ int main() {
 	printf("%d", res);
 	return 0;
 }
-
+```
 对于这题，如果理解了汉诺塔的递归思想，应当很容易解出。
 
 设f(n)为2n个原盘从A柱移动到C柱所需的最小移动次数。这个过程可分为三步：首先，将A柱上面的2(n−1)个原盘从A柱移动到B柱，这一步所需的最小移动次数为f(n−1)；然后，将A柱下面剩余的2个原盘依次移动到C柱，这一步所需要的最小移动次数为2；最后，将B柱的2(n−1)个原盘从B柱移动到C柱，这一步所需的最小移动次数为f(n−1)。故，可推出： f(n)=2f(n−1)+2
 
 
 6.
-
+```c
 #include <stdio.h>
 int moveN_HanoiFromSrcToDest(const char* src, const char* mid,
                              const char* dest, int n) {
@@ -91,7 +95,7 @@ int main() {
 	printf("%d", moveN_HanoiFromSrcToDest("A", "B", "C", n));
 	return 0;
 }
-
+```
 对于这题，如果理解了汉诺塔的递归思想，应当很容易解出。
 
 设f(n)为n个原盘从A柱移动到C柱所需的步骤数。想将n个原盘从A柱移动到C柱，这个过程可分为5步：首先，将A柱上面的n−1个原盘从A柱移动到C柱，这一步所需的移动步数为f(n−1)；然后，将A柱最下面的原盘从A柱移动到B柱，这一步所需的移动步数为1；然后，将C柱的n−1个原盘从C柱移动到A柱，这一步所需的移动步数为f(n−1)；然后，将B柱的1个原盘从B柱移动到C柱，这一步所需的移动步数为1；最后，将A柱的n−1个原盘从A柱移动到C柱，这一步所需的移动步数为f(n−1)。
@@ -102,7 +106,7 @@ int main() {
 
 
 7.
-
+```c
 int BinomialCoefficient(int n, int k) {
 	if (k > n / 2)
 		k = n - k;
@@ -113,5 +117,5 @@ int BinomialCoefficient(int n, int k) {
 	return BinomialCoefficient(n - 1, k - 1) +
 	       BinomialCoefficient(n - 1, k);
 }
-
+```
 在宏观上把握递归的思想，会更容易理解递归。
