@@ -6,7 +6,7 @@
 
 4. 理解前置自增/自减操作符与后置自增/自减操作符的异同（注：无须写程序）。
 
-5. 阅读The C Programming Language一书2.9节，初步理解各种位运算操作符，及其使用技巧（注：无须写程序）。
+5. 阅读[The C Programming Language](https://github.com/njnucsta/C2018FALL/blob/master/book/TCPL_2rd_EN.pdf)一书2.9节，初步理解各种位运算操作符，及其使用技巧（注：无须写程序）。
 
 6. 补充阅读：[Bitwise Operation]( https://en.wikipedia.org/wiki/Bitwise_operation)（英文的，慢慢看）（注：无须写程序）。
 
@@ -23,7 +23,7 @@ int main()
     return 0;
 }
 ```
-9. 补充练习：完成The C Programming Language一书Exercise2-6,2-7,2-8。（注：程序文件分别命名为tcpl_2_6.c，tcpl_2_7.c，tcpl_2_8.c）。
+9. 补充练习：完成[The C Programming Language](https://github.com/njnucsta/C2018FALL/blob/master/book/TCPL_2rd_EN.pdf)一书Exercise2-6,2-7,2-8。（注：程序文件分别命名为tcpl_2_6.c，tcpl_2_7.c，tcpl_2_8.c）。
 
 10. 在如下程序中，去掉注释，在TODO的位置写一些代码，做到能够交换a与b的数值。例如，若输入的a和b分别是3和5，那么两条printf语句的输出应当分别是：
 a = 3, b = 5
