@@ -4,7 +4,7 @@
 int is_sorted(int arr[], int left, int right);
 ```
 该函数接受三个参数，判断数组是否有序（升序，未必是严格升序，非降序即可）。其中，arr是整型数组，left和right为数组的区间。即，该函数判断数组区间[left, right]是否有序。在主函数中调用该函数，并进行多组测试，以验证你的函数（注：程序命名为1.c）。
-2.  写一个函数，函数声明如下：
+2. 写一个函数，函数声明如下：
 ```c
 void BubbleSort(int arr[], int left, int right);
 ```
@@ -21,7 +21,7 @@ void InsertionSort(int arr[], int left, int right);
 ```
 该函数接受三个参数，实现插入排序的功能（升序排序）。参数的意义及要求同第2题。你可以参阅百度百科或维基百科关于插入排序的讲解，看懂排序的过程，并自己实现。
 [百度百科](https://baike.baidu.com/item/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/7214992?fr=aladdin)
-[维基百科[(https://en.wikipedia.org/wiki/Insertion_sort)
+[维基百科](https://en.wikipedia.org/wiki/Insertion_sort)
 建议参阅维基百科，讲解更为详细，且有图解。如果你对英语头大，可切换到中文模式。
 （注：程序命名为4.c）
 5. 实现选择排序。函数声明如下：
