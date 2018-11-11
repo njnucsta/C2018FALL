@@ -4,6 +4,7 @@
 int is_sorted(int arr[], int left, int right);
 ```
 该函数接受三个参数，判断数组是否有序（升序，未必是严格升序，非降序即可）。其中，arr是整型数组，left和right为数组的区间。即，该函数判断数组区间[left, right]是否有序。在主函数中调用该函数，并进行多组测试，以验证你的函数（注：程序命名为1.c）。
+
 2. 写一个函数，函数声明如下：
 ```c
 void BubbleSort(int arr[], int left, int right);
