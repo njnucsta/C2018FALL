@@ -1,5 +1,5 @@
 1.
-
+```c
 #include <stdio.h>
 int main() {
 	int i;
@@ -9,10 +9,10 @@ int main() {
 	printf("%d\n", sum);
 	return 0;
 }
-
+```
 
 2.
-
+```c
 #include <stdio.h>
 int main() {
 	int i;
@@ -22,10 +22,10 @@ int main() {
 	printf("%d\n", res);
 	return 0;
 }
-
+```
 
 3.
-
+```c
 #include <stdio.h>
 int main() {
 	int a, n;
@@ -39,10 +39,10 @@ int main() {
 	printf("%d\n", res);
 	return 0;
 }
-
+```
 
 4.
-
+```c
 #include <stdio.h>
 int main() {
 	int sum = 0;
@@ -55,10 +55,10 @@ int main() {
 	printf("%d\n", sum);
 	return 0;
 }
-
+```
 
 5.
-
+```c
 #include <stdio.h>
 int main() {
 	int i, j;
@@ -69,10 +69,10 @@ int main() {
 	}
 	return 0;
 }
-
+```
 
 6.
-
+```c
 #include <stdio.h>
 int main() {
 	int N;
@@ -93,13 +93,13 @@ int main() {
 	}
 	return 0;
 }
-
+```
 注：
 在第三个for循环中，变量i表示当前所输出的行数，从0开始，共2N?1行。对于每一行，首先输出若干个空格，再输出若干个*，最后输出换行符。
 
 
 7.
-
+```c
 #include <stdio.h>
 int main() {
 	char str[4];
@@ -112,10 +112,10 @@ int main() {
 		printf("%c", str[0]);
 	return 0;
 }
-
+```
 
 8.
-
+```c
 #include <stdio.h>
 int main() {
 	int n;
@@ -131,10 +131,10 @@ int main() {
 	       + (arr[3] * 8 + arr[2] * 4 + arr[1] * 2 + arr[0]));
 	return 0;
 }
-
+```
 
 9.
-
+```c
 #include <stdio.h>
 int main() {
 	double d1, d2;
@@ -144,10 +144,10 @@ int main() {
 	printf("%c %d %.2lf %.2lf", c, i, d1, d2);
 	return 0;
 }
-
+```
 
 10.
-
+```c
 #include <stdio.h>
 #include <math.h>
 #define EPS 1e-5
@@ -173,11 +173,11 @@ int main() {
 	printf("%.2lf\n", halfaplusb);
 	return 0;
 }
-
+```
 注：
 （1）宏可以简化重复代码。可参考教材和这篇博客：http://blog.csdn.net/pirlck/article/details/51254590。
 （2）浮点数的大小与不相等判断直接使用>、<、!=，但浮点数的相等判断不能直接用==，因为浮点数在计算机中保存会存在精度缺失的问题。可以使用如下方法：
-
+```c
 #include <stdio.h>
 #include <math.h>
 #define EPA 1e-10// EPS为阈值
@@ -190,12 +190,12 @@ int main() {
 	printf("%d\n", fabs(d1 - d2) < EPS);// corrent way
 	return 0;
 }
-
+```
 本题判断f((a+b)/2)是否为零时，应该用 if(fabs(temp) < EPS) 而非 if(temp == 0)
 
 
 11.
-
+```c
 #include <stdio.h>
 int main() {
 	int n;
@@ -228,10 +228,10 @@ int main() {
 	}
 	return 0;
 }
-
+```
 
 12.
-
+```c
 #include <stdio.h>
 int gcd(int a,int b) {
 	a=a%b;
@@ -245,7 +245,7 @@ int main() {
 	printf("%d/%d",a/c,b/c);
 	return 0;
 }
-
+```
 注：
 辗转相除法求最大公约数
 
