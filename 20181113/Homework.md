@@ -22,9 +22,7 @@ binary_search_recursive为递归版本；binary_search_ iterative为循环（迭
 ```c
 void InsertionSort(int arr[], int left, int right);
 ```
-该函数接受三个参数，实现插入排序的功能（升序排序）。参数的意义及要求同第2题。你可以参阅百度百科或维基百科关于插入排序的讲解，看懂排序的过程，并自己实现。
-[百度百科](https://baike.baidu.com/item/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/7214992?fr=aladdin)
-[维基百科](https://en.wikipedia.org/wiki/Insertion_sort)
+该函数接受三个参数，实现插入排序的功能（升序排序）。参数的意义及要求同第2题。你可以参阅[百度百科](https://baike.baidu.com/item/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/7214992?fr=aladdin)或[维基百科](https://en.wikipedia.org/wiki/Insertion_sort)关于插入排序的讲解，看懂排序的过程，并自己实现。
 建议参阅维基百科，讲解更为详细，且有图解。如果你对英语头大，可切换到中文模式。
 （注：程序命名为4.c）
 
@@ -32,10 +30,10 @@ void InsertionSort(int arr[], int left, int right);
 ```c
 void SelectionSort(int arr[], int left, int right);
 ```
-该函数接受三个参数，实现选择排序的功能（升序排序）。参数的意义及要求同第2题。你可以参阅百度百科或维基百科关于插入排序的讲解，看懂排序的过程，并自己实现。
-[百度百科](https://baike.baidu.com/item/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/9762418?fr=aladdin)
-[维基百科](https://en.wikipedia.org/wiki/Selection_sort)
+该函数接受三个参数，实现选择排序的功能（升序排序）。参数的意义及要求同第2题。你可以参阅[百度百科](https://baike.baidu.com/item/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/9762418?fr=aladdin)或[维基百科](https://en.wikipedia.org/wiki/Selection_sort)关于插入排序的讲解，看懂排序的过程，并自己实现。
 （注：程序命名为5.c）
+
+
 以上五题很重要，请熟练掌握。
 
 6. 写一个函数，函数声明如下：
