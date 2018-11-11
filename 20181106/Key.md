@@ -39,6 +39,7 @@ int main() {
 	int N, K;
 	int i, j;
 	scanf("%d%d", &N, &K);
+	N--;
 	int fib[1001] = {1, 1};
 	for (i = 1; i <= K; ++i)
 		fib[i] = 1;
