@@ -26,8 +26,10 @@ int main()
 9. 补充练习：完成[The C Programming Language](https://github.com/njnucsta/C2018FALL/blob/master/book/TCPL_2rd_EN.pdf)一书Exercise2-6,2-7,2-8。（注：程序文件分别命名为tcpl_2_6.c，tcpl_2_7.c，tcpl_2_8.c）。
 
 10. 在如下程序中，去掉注释，在TODO的位置写一些代码，做到能够交换a与b的数值。例如，若输入的a和b分别是3和5，那么两条printf语句的输出应当分别是：
+```
 a = 3, b = 5
 a = 5, b = 3
+```
 （注：程序文件命名为swap.c；提示：分别采用临时变量与位运算的方式来完成）。
 ```c
 #include <stdio.h>
