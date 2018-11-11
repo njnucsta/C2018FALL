@@ -1,4 +1,5 @@
 8.
+```c
 #include <stdio.h>
 int main()
 {
@@ -7,8 +8,11 @@ int main()
     printf("%d\n", flag);
     return 0;
 }
+```
+
 
 10.
+```c
 #include <stdio.h>
 int main()
 {
@@ -27,3 +31,4 @@ int main()
     printf("a = %d, b = %d\n", a, b);
     return 0;
 }
+```
