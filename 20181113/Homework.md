@@ -139,9 +139,9 @@ Joe Math990112
 ```
 ./copy.out <src_file> <dest_dir>
 ```
-即可将文件src_file拷贝到dest_dir目录下。例如，如果想将文件`/root/TCPL17/20171106/19140215/example.c`拷贝到`/root`目录下，则可使用命令：
+即可将文件src_file拷贝到dest_dir目录下。例如，如果想将文件`/root/19160225/20181113/example.c`拷贝到`/root`目录下，则可使用命令：
 ```
-./copy.out /root/TCPL17/20171106/19140215/example.c /root
+./copy.out /root/19160225/20181113/example.c /root
 ```
 （注：程序命名为16.c）。
 
