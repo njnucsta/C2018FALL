@@ -2,11 +2,11 @@
 
 
 2&7.
-https://www.cnblogs.com/CXCXCXC/p/4641812.html
+[这篇博客](https://www.cnblogs.com/CXCXCXC/p/4641812.html)
 
 
 3.
-
+```c
 #include <stdio.h>
 int main() {
 	char str[20];
@@ -26,10 +26,10 @@ int main() {
 	}
 	return 0;
 }
-
+```
 
 4.
-
+```c
 #include <stdio.h>
 #include <math.h>
 int main() {
@@ -50,10 +50,10 @@ int main() {
 		printf("No Solution");
 	return 0;
 }
-
+```
 
 5.
-
+```c
 #include <stdio.h>
 #include <string.h>
 int main() {
@@ -79,10 +79,10 @@ int main() {
 	}
 	return 0;
 }
-
+```
 
 6.
-
+```c
 #include <stdio.h>
 #include <string.h>
 int main() {
@@ -96,10 +96,10 @@ int main() {
 		printf("A");
 	return 0;
 }
-
+```
 
 8
-
+```c
 #include <stdio.h>
 const int N = 13;
 int arr[N] = {0};
@@ -120,3 +120,4 @@ int main() {
 	PascalTriangle(N);
 	return 0;
 }
+```
