@@ -14,7 +14,7 @@ void BubbleSort(int arr[], int left, int right);
 3. 实现二分查找，请分别给出循环实现与递归实现。函数声明如下：
 ```c
 int binary_search_recursive(int arr[], int left, int right, int query);
-int binary_search_ iterative(int arr[], int left, int right, int query);
+int binary_search_iterative(int arr[], int left, int right, int query);
 ```
 binary_search_recursive为递归版本；binary_search_ iterative为循环（迭代）版本。该函数接受四个参数，实现二分查找的功能。其中，arr为有序（严格升序）数组，left和right为待查找的数组区间，query为待查找的关键字。即，该函数使用二分查找的方式，在数组区间[left, right]中查找值为query的元素，并返回该元素的数组下标；若为查找到，则返回-1（注：程序命名为3.c）。
 
