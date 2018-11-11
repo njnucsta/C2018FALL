@@ -1,7 +1,7 @@
 1. 参见教材P96任务5.2。
 
 
-2&7.
+2.
 [这篇博客](https://www.cnblogs.com/CXCXCXC/p/4641812.html)
 
 
