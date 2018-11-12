@@ -3,20 +3,20 @@
 ```c
 int is_sorted(int arr[], int left, int right);
 ```
-该函数接受三个参数，判断数组arr的一个区间arr[left],arr[left+1],...,arr[right-1],arr[right]是否非严格单调递增,即对于任意的下标i，只要满足left<=i<=right-1，都有arr[i]<=arr[i+1]。在主函数中调用该函数，并进行多组测试，以验证你的函数（注：程序命名为1.c）。
+该函数接受三个参数，判断数组arr的子区间arr[left],arr[left+1],...,arr[right-1],arr[right]是否非严格单调递增,即对于任意的下标i，只要满足left<=i<=right-1，都有arr[i]<=arr[i+1]。在主函数中调用该函数，并进行多组测试，以验证你的函数（注：程序命名为1.c）。
 
 2. 写一个函数，函数声明如下：
 ```c
 void BubbleSort(int arr[], int left, int right);
 ```
-该函数接受三个参数，实现冒泡排序的功能（升序排序）。其中，arr是整型待排序数组，left和right为数组arr的待排序区间。即，该函数使用冒泡排序的方式，将数组区间[left, right]进行升序排序。在主函数中调用该函数，并进行多组测试，以验证你的函数（注：你可以使用第1题的is_sorted函数来判断你的BubbleSort函数实现是否正确；你可以采用生成随机数的方式随机生成若干数据进行测试。程序命名为2.c）。
+该函数接受三个参数，对数组arr的子区间arr[left],arr[left+1],...,arr[right-1],arr[right]，进行冒泡排序（升序排序）。在主函数中调用该函数，并进行多组测试，以验证你的函数（注：你可以使用第1题的is_sorted函数来判断你的BubbleSort函数实现是否正确；你可以采用生成随机数的方式随机生成若干数据进行测试。程序命名为2.c）。
 
 3. 实现二分查找，请分别给出循环实现与递归实现。函数声明如下：
 ```c
 int binary_search_recursive(int arr[], int left, int right, int query);
 int binary_search_iterative(int arr[], int left, int right, int query);
 ```
-binary_search_recursive为递归版本；binary_search_ iterative为循环（迭代）版本。该函数接受四个参数，实现二分查找的功能。其中，arr为有序（严格升序）数组，left和right为待查找的数组区间，query为待查找的关键字。即，该函数使用二分查找的方式，在数组区间[left, right]中查找值为query的元素，并返回该元素的数组下标；若为查找到，则返回-1（注：程序命名为3.c）。
+该函数接受四个参数，binary_search_recursive为递归版本；binary_search_ iterative为循环（迭代）版本。数组arr的子区间arr[left],arr[left+1],...,arr[right-1],arr[right]严格单调递增,即对于任意的下标i，只要满足left<=i<=right-1，都有arr[i]<arr[i+1]，query为待查找的关键字。要求使用二分查找的方式，在该子区间内查找值为query的元素，并返回该元素的数组下标；若未找到，则返回-1（注：程序命名为3.c）。
 
 4. 实现插入排序。函数声明如下：
 ```c
