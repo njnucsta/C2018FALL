@@ -3,7 +3,7 @@
 ```c
 int is_sorted(int arr[], int left, int right);
 ```
-该函数接受三个参数，判断数组arr的一个区间arr[left],arr[left+1],...,arr[right-1],arr[right+1]是否非严格单调递增,即对于任意的下标i，只要满足left<=i<=right-1，都有arr[i]<=arr[i+1]。在主函数中调用该函数，并进行多组测试，以验证你的函数（注：程序命名为1.c）。
+该函数接受三个参数，判断数组arr的一个区间arr[left],arr[left+1],...,arr[right-1],arr[right]是否非严格单调递增,即对于任意的下标i，只要满足left<=i<=right-1，都有arr[i]<=arr[i+1]。在主函数中调用该函数，并进行多组测试，以验证你的函数（注：程序命名为1.c）。
 
 2. 写一个函数，函数声明如下：
 ```c
