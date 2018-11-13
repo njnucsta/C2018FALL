@@ -30,7 +30,7 @@ void InsertionSort(int arr[], int left, int right);
 ```c
 void SelectionSort(int arr[], int left, int right);
 ```
-该函数接受三个参数，实现选择排序的功能（升序排序）。参数的意义及要求同第2题。你可以参阅[百度百科](https://baike.baidu.com/item/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/9762418?fr=aladdin)或[维基百科](https://en.wikipedia.org/wiki/Selection_sort)关于插入排序的讲解，看懂排序的过程，并自己实现。
+该函数接受三个参数，实现选择排序的功能（升序排序）。参数的意义及要求同第2题。你可以参阅[百度百科](https://baike.baidu.com/item/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/9762418?fr=aladdin)或[维基百科](https://en.wikipedia.org/wiki/Selection_sort)关于选择排序的讲解，看懂排序的过程，并自己实现。
 （注：程序命名为5.c）
 
 
