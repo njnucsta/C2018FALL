@@ -132,9 +132,9 @@ char str[] = "ABCD", *p = str;
 printf("%d", *(p + 4));
 ```
 
-7. 设a、b、c、d、m、n均为int型变量，且a = 5、b = 6、c = 7、d = 8、m = 2、n = 2。则逻辑表达式(m = a > b) && (n = c > d)运算后，n的值为（）。
+7. 设a、b、c、d、m、n均为int型变量，且a = 5、b = 6、c = 7、d = 8、m = 2、n = 2。则逻辑表达式`(m = a > b) && (n = c > d)`运算后，n的值为（）。
 
-8. 定义char dog[] = "wang\0miao";那么sizeof(dog)与strlen(dog)分别是多少（）。
+8. 定义`char dog[] = "wang\0miao"`;那么`sizeof(dog)`与`strlen(dog)`分别是多少（）。
 
 9. 下列代码的输出结果是（）。
 ```c
