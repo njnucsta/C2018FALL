@@ -226,6 +226,7 @@ int my_strcmp(const char* str1, const char* str2) {
 ```c
 #include<stdio.h>
 #include<string.h>
+#include<stdlib.h>
 struct MS {
 	char name[11];
 	char num[11];
