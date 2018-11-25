@@ -78,7 +78,7 @@ int find(const char* str, const char* substr) {
 ```
 原题中函数名为substr，与该函数的第二个形参命名相同，虽未发生命名冲突，但这其实不是一个很好的习惯。我在出题时疏忽了，特此将该函数名更正find。即在主串str中查找字串substr，并返回其第一次出现的位置；若为查找到，则返回-1。
 
-这是一道***字符串匹配***题。我在此处用的是普通的匹配方式，即试探所有的情况。此题另有更好的做法，叫做***KMP算法***。感兴趣的同学可以参考
+这是一道字符串匹配题。我在此处用的是普通的匹配方式，即试探所有的情况。此题另有更好的做法，叫做KMP算法。感兴趣的同学可以参考
 [百度百科](https://baike.baidu.com/item/KMP/10158450?fr=aladdin)
 或[维基百科](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm)
 ***
@@ -137,7 +137,7 @@ int temparr[right – left + 1];
 ```
 虽然这个写法在使用gcc编译器进行编译时不会出现编译错误，甚至在运行时也几乎不会出现运行时错误，但我建议还是慎用这种写法。出于以下两点理由：
 
-其一，这个特性叫***变长数组***。我们知道，C语言在定义数组时，数组的长度应当是一个常量，或者说，编译期常量，即，在编译期就已经确定了其值，也就是说，在编译完成后，编译器须要知道某一数组的具体大小，这样才能在程序运行时为函数栈分配确定的空间。不过，变长数组是C99的一个新特性，也就是说，C语言标准支持这种写法。然而，未必所有的C语言编译器都实现了这个特性，我们目前所使用的gcc的确是支持变长数组，但换一个编译器，就可能出现编译错误。
+其一，这个特性叫变长数组。我们知道，C语言在定义数组时，数组的长度应当是一个常量，或者说，编译期常量，即，在编译期就已经确定了其值，也就是说，在编译完成后，编译器须要知道某一数组的具体大小，这样才能在程序运行时为函数栈分配确定的空间。不过，变长数组是C99的一个新特性，也就是说，C语言标准支持这种写法。然而，未必所有的C语言编译器都实现了这个特性，我们目前所使用的gcc的确是支持变长数组，但换一个编译器，就可能出现编译错误。
 
 其中，C99标准是ISO/IEC 9899:1999 - Programming languages -- C的简称，是C语言的官方标准第二版，与1999年发布。你可以了解有关[C99](https://baike.baidu.com/item/c99/7335191?fr=aladdin)
 的内容。
@@ -202,7 +202,7 @@ ip = 0; // the int 0 converted to a null pointer of type int *
 
 包含short和int类型的表达式，short转换为int。如果int足以表示所有unsigned short类型的值，则将unsigned short转换为int，否则两个操作数均转换为unsigned int。long和unsigned int的转换也一样。只要机器上的long足够表示unsigned int类型所有的值，就将unsigned int转换为long，否则两个操作数都转换为unsigned long。在32位的机器上，long和int通常用一个字长表示，此时如果表达式包含unsigned int和long，两者都转换为unsigned long。
 
-***如果表达式包含signed和unsigned int，signed会被转换为unsigned***。如果int 操作数的值恰为负数，其转换为unsigned int可能会变为一个很大的正数（转换结果是该负值对unsigned int的取值个数求模）。所以最好避免对int和unsigned int的两个操作数进行比较。
+如果表达式包含signed和unsigned int，signed会被转换为unsigned。如果int 操作数的值恰为负数，其转换为unsigned int可能会变为一个很大的正数（转换结果是该负值对unsigned int的取值个数求模）。所以最好避免对int和unsigned int的两个操作数进行比较。
 
 转换示例：
 
