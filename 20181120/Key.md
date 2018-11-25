@@ -29,7 +29,7 @@ int main() {
 
 2.
 ```c
-int binInsert(int n, int m, int j, int i) {
+int bin_insert(int n, int m, int j, int i) {
 	m <<= j;
 	n |= m;
 	return n;
