@@ -65,7 +65,7 @@ int add(int n1, int n2) {
 ***
 5.
 ```c
-int ***find***(const char* str, const char* substr) {
+int find(const char* str, const char* substr) {
 	int i, j, k;
 	for (i = 0; str[i]; ++i) {
 		for (k = i, j = 0; str[k] && substr[j]
