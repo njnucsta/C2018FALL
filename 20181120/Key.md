@@ -39,6 +39,7 @@ int bin_insert(int n, int m, int j, int i) {
 	return n;
 }
 ```
+***
 3.
 ```c
 int sum(int n) {
