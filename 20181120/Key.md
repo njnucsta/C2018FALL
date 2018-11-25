@@ -104,7 +104,7 @@ int count_substr(const char* str, const char* substr) {
 ```c
 void Merge(int arr[], int left, int mid, int right) {
 	int size = right - left + 1;
-	int* temparr = (int*)***malloc***(size * sizeof(int));
+	int* temparr = (int*)malloc(size * sizeof(int));
 	int i = left, j = mid + 1, k = 0;
 	while (i <= mid && j <= right) {
 		if (arr[i] <= arr[j])
@@ -116,8 +116,8 @@ void Merge(int arr[], int left, int mid, int right) {
 		temparr[k++] = arr[i++];
 	while (j <= right)
 		temparr[k++] = arr[j++];
-	***memcpy***(arr + left, temparr, size * sizeof(int));
-	***free***(temparr);
+	memcpy(arr + left, temparr, size * sizeof(int));
+	free(temparr);
 }
 void MergeSort(int arr[], int left, int right) {
 	int mid = left + (right - left) / 2;
