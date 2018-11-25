@@ -142,11 +142,6 @@ for (i = left, k = 0; i <= right; ++i)
 memcpy的使用方法可以参考[百度百科](https://baike.baidu.com/item/memcpy/659918?fr=aladdin)
 或[cppreference](http://en.cppreference.com/w/c/string/byte/memcpy)
 
-8.
-提供一篇[博客](http://blog.csdn.net/xyt8023y/article/details/47419493)
-供参考。
-以上三题均较难，我所提供的题解均是用C++语言实现的，不过其大部分的写法同C。另外，解体思路也值得参考。
-
 语法练习题：
 1.（2，0，1，2）。
 2.（15）。
