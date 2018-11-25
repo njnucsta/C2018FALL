@@ -185,6 +185,7 @@ ip = 0; // the int 0 converted to a null pointer of type int *
 包含short和int类型的表达式，short转换为int。如果int足以表示所有unsigned short类型的值，则将unsigned short转换为int，否则两个操作数均转换为unsigned int。long和unsigned int的转换也一样。只要机器上的long足够表示unsigned int类型所有的值，就将unsigned int转换为long，否则两个操作数都转换为unsigned long。在32位的机器上，long和int通常用一个字长表示，此时如果表达式包含unsigned int和long，两者都转换为unsigned long。
 如果表达式包含signed和unsigned int，signed会被转换为unsigned。如果int 操作数的值恰为负数，其转换为unsigned int可能会变为一个很大的正数（转换结果是该负值对unsigned int的取值个数求模）。所以最好避免对int和unsigned int的两个操作数进行比较。
 转换示例：
+
 ![](https://github.com/njnucsta/C2018FALL/blob/master/20181120/01123519-ae156d26fffb426ea0c6879878c46df5.jpg)
 
 
