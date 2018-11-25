@@ -70,7 +70,7 @@ int find(const char* str, const char* substr) {
 	return -1;
 }
 ```
-原题中函数名为substr，与该函数的第二个形参命名相同，虽为发生命名冲突，但这其实不是一个很好的习惯。我在出题时疏忽了，特此将该函数名更正find。即在主串str中查找字串substr，并返回其第一次出现的位置；若为查找到，则返回-1。
+原题中函数名为substr，与该函数的第二个形参命名相同，虽未发生命名冲突，但这其实不是一个很好的习惯。我在出题时疏忽了，特此将该函数名更正find。即在主串str中查找字串substr，并返回其第一次出现的位置；若为查找到，则返回-1。
 这是一道字符串匹配题。我在此处用的是普通的匹配方式，即试探所有的情况。此题另有更好的做法，叫做KMP算法。感兴趣的同学可以参考
 [百度百科](https://baike.baidu.com/item/KMP/10158450?fr=aladdin)
 或[维基百科](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm)
