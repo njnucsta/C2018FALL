@@ -43,7 +43,7 @@ int sum(int n) {
 }
 ```
 这里用到了短路求值
-
+***
 4.
 ```c
 int add(int n1, int n2) {
@@ -57,6 +57,7 @@ int add(int n1, int n2) {
 	return n1;
 }
 ```
+***
 5.
 ```c
 int find(const char* str, const char* substr) {
@@ -74,7 +75,7 @@ int find(const char* str, const char* substr) {
 这是一道字符串匹配题。我在此处用的是普通的匹配方式，即试探所有的情况。此题另有更好的做法，叫做KMP算法。感兴趣的同学可以参考
 [百度百科](https://baike.baidu.com/item/KMP/10158450?fr=aladdin)
 或[维基百科](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm)
-
+***
 6.
 ```c
 int count_substr(const char* str, const char* substr) {
@@ -93,7 +94,7 @@ int count_substr(const char* str, const char* substr) {
 }
 ```
 可以使用更好的KMP算法
-
+***
 7.
 ```c
 void Merge(int arr[], int left, int mid, int right) {
@@ -141,13 +142,13 @@ for (i = left, k = 0; i <= right; ++i)
 ```
 memcpy的使用方法可以参考[百度百科](https://baike.baidu.com/item/memcpy/659918?fr=aladdin)
 或[cppreference](http://en.cppreference.com/w/c/string/byte/memcpy)
-
+***
 语法练习题：
 
 1. （2，0，1，2）。
-
+***
 2. （15）。
-
+***
 3. （i > j）。
 
 解释如下：
@@ -209,13 +210,13 @@ if (cp) // true if pointer cp is not zero
 
 4） 转换与枚举类型
 枚举类型对象或枚举成员将自动转换为整型，其转换结果可以用于任何需要使用整数值的地方。具体会被转换为哪种整型，依赖于枚举成员的最大值和机器。enum对象或枚举成员至少提升为int，如果int无法表示枚举成员的最大值，则提升到能表示所有枚举成员值的、大于int型的最小类型（unsigned int 、long或unsigned long）。
-
+***
 4. （2, 5）。
 
 解释如下：
 数组名就是数组0号元素的地址，即a = &a[0]。
 &a是指向一个有5个整型元素的数组的地址。a是一维指针，&a相当于是二维指针。&a+1就是从a向后跳过一个完整的数组所占用的内存空间。整型5个元素的数组占用5*sizeof(int)=5*4=20，所以&a+1应该从a向后跳20字节。正好指到a[4]的后面。ptr是int *，减1就是向前跳4个字节，ptr-1正好指向a[4]。
-
+***
 5. （10, 20, 30）。
 
 解释如下：
@@ -227,7 +228,7 @@ p + 1表示在行上移动。e.g.，p + 1 = &(p[0]) + 1 = &p[1]。
 因此：
 *(p[0]+1) = p[0][1] = 20。
 (*p)[2] = p[0][2] = 30。
-
+***
 6. （0）。
 
 解释如下：
@@ -238,12 +239,12 @@ str[2] = 'C';
 str[3] = 'D';
 str[4] = '\0';
 而*(p + 4) == str[4]，'\0'的ASCII为0，故输出0。
-
+***
 7. （2）。
 
 解释如下：
 注意短路求值。逻辑与或者逻辑或的表达式，先是判断一边，若一边可以判断整个表达式为真假时，另一边不再执行。
-
+***
 8. （10，4）。
 
 解释如下：
@@ -251,13 +252,13 @@ sizeof返回数组所占的字节数，'wang' 'miao'共占8字节，显式'\0'�
 strlen返回字符串的长度，以遇到'\0'结束符为准，因此为4。
 另外，对于指针，sizeof操作符返回这个指针占的空间，一般是4个字节；而对于一个数组，sizeof返回这个数组所有元素占的总空间,包括结束符'\0'。char*与char[]容易混淆，一定要分清。
 strlen不区分是数组还是指针，就读到'\0'为止返回长度。而且strlen是不把'\0'计入字符串的长度的 。
-
+***
 9. （00801005, 00810014）。
 
 解释如下：
 p1指向字符型，一次移动一个字符型，1个字节；p1+5后移5个字节，16进制表示为5；p2指向长整型，一次移动一个长整型，4个字节，p2+5后移20字节，16进制表示为14。
 另外，char每次移动1个字节；short移动2个字节 ；int、long、float移动4个字节 ；double移动8个字节。
-
+***
 10. （7）。
 
 解释如下：
