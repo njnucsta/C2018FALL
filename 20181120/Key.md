@@ -131,7 +131,7 @@ void MergeSort(int arr[], int left, int right) {
 ```
 函数MergeSort如题所述；函数Merge实现将两个有序（非降序）序列归并为一个有序（非降序）序列，其中arr[left .. mid]与arr[mid + 1 .. right]均已有序（非降序）。
 
-我用到了malloc函数进行动态内存分配。而有些同学在此处，可以会写为：
+我用到了malloc函数进行动态内存分配。而有些同学在此处，可能会写为：
 ```c
 int temparr[right – left + 1];
 ```
