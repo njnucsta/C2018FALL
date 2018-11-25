@@ -61,6 +61,7 @@ struct Node* merge(struct Node* head1, struct Node* head2);
 void clear(struct Node* head);
 ```
 接受一链表的头结点head。该函数将该链表清空，即删除所有节点，并释放其内存空间。写出完整的程序，在主函数中调用该函数，并进行多组测试，以验证你的函数（注：程序命名为9.c）。
+
 以上几道链表题，你应当熟练掌握。
 ***
 10. 求数组的逆序对的个数。
