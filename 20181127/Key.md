@@ -16,6 +16,7 @@ struct Node* construct(int arr[], int size) {
 	return head.next;
 }
 ```
+***
 2. 
 ```c
 struct Node* insert_to_head(struct Node* head, int val) {
@@ -25,6 +26,7 @@ struct Node* insert_to_head(struct Node* head, int val) {
 	return newhead;
 }
 ```
+***
 3.
 ```c
 struct Node* insert_to_tail(struct Node* head, int val) {
@@ -39,6 +41,7 @@ struct Node* insert_to_tail(struct Node* head, int val) {
 	return head;
 }
 ```
+***
 4.
 ```c
 struct Node* insert(struct Node* head, int val) {
@@ -60,6 +63,7 @@ struct Node* insert(struct Node* head, int val) {
 	return head;
 }
 ```
+***
 5. 
 ```c
 struct Node* delete_node(struct Node* head, struct Node* target) {
@@ -83,6 +87,7 @@ struct Node* delete_node(struct Node* head, struct Node* target) {
 	return head;
 }
 ```
+***
 6.
 ```c
 struct Node* delete_val(struct Node* head, int val) {
@@ -108,6 +113,7 @@ struct Node* delete_val(struct Node* head, int val) {
 	return head;
 }
 ```
+***
 7.
 ```c
 struct Node* reverse(struct Node* head) {
@@ -123,6 +129,7 @@ struct Node* reverse(struct Node* head) {
 	return prev;
 }
 ```
+***
 8.
 ```c
 struct Node* merge(struct Node* head1, struct Node* head2) {
@@ -163,6 +170,7 @@ struct Node* merge(struct Node* head1, struct Node* head2) {
 	return head.next;
 }
 ```
+***
 9.
 ```c
 void clear(struct Node* head) {
@@ -174,6 +182,7 @@ void clear(struct Node* head) {
 	}
 }
 ```
+***
 10.
 ```c
 int Merge(int arr[], int left, int mid, int right) {
@@ -209,22 +218,25 @@ int MergeSort(int arr[], int left, int right) {
 }
 ```
 在归并排序的基础上稍作修改即可，函数MergeSort 的返回值即为数组arr 逆序对的个数
-
+***
 语法练习题：
 1. （0）。
+***
 2. （0，1）。
+***
 3. （D）。
 
 解释：
 
 ++的优先级比*高，所以D 中p++先执行，p 指向的地址改变了，所以year 的内容没有变化。
-
+***
 4. （9）。
+***
 5. （C）。
 
 解释：
 
-*** 知识点1：函数指针变量。
+** 知识点1：函数指针变量。
 
 函数指针变量的声明方法为：返回值类型 ( * 指针变量名) ([形参列表]);
 
@@ -235,16 +247,16 @@ int (*p)(float) = &f1;
 ```
 pf，p 都是函数指针变量。
 
-*** 知识点2：函数地址。
+** 知识点2：函数地址。
 
 C 在编译时，每一个函数都有一个入口地址，该入口地址就是函数指针所指向的地址。
 
 函数地址的获取，可以是函数名，也可以在函数名前加取地址符&。
 
 C 错误是因为函数行参类型不匹配。
-
+***
 6. （Bejing）。
-
+***
 7. （D）。
 
 解释：
@@ -266,7 +278,7 @@ void Test() {
 	printf("%s", str);
 }
 ```
-
+***
 8. （B）。
 
 解释：
@@ -287,7 +299,7 @@ char *a [10] ;
 这里就是一个优先级的问题了，[]优先级要高于解引用运算符。所以第一个a 为指针，指向具有十个char 元素的指针。第二个为数组，每个元素都是指针，每个指针指向一个char 变量。
 
 这就是函数指针和函数也有类似的问题。分析优先级即可游刃而解。
-
+***
 9. （14）。
 
 解释：
@@ -295,7 +307,7 @@ char *a [10] ;
 X & (X - 1); 统计X 的二进制中1 的个数；
 
 X | (X + 1); 统计X 的二进制中0 的个数；
-
+***
 10. （AB）。
 
 解释：
