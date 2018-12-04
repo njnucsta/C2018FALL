@@ -220,7 +220,7 @@ int MergeSort(int arr[], int left, int right) {
 在归并排序的基础上稍作修改即可，函数MergeSort 的返回值即为数组arr 逆序对的个数
 ***
 语法练习题：
-1. （0）。
+1. （1）。
 ***
 2. （0，1）。
 ***
