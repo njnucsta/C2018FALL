@@ -4,4 +4,4 @@ Homework of NJNU C Language Course 2018 Fall
 
 2. C等专业课相关问题也可以创建issue讨论。
 
-3. 建议大家的都star一下本仓库。
+3. 建议大家都star一下本仓库。
